@@ -1,0 +1,60 @@
+$date
+	Sun May 30 12:06:47 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_vedic_multiplier_2bit $end
+$var wire 4 ! out [3:0] $end
+$var reg 2 " a [1:0] $end
+$var reg 2 # b [1:0] $end
+$scope module uut $end
+$var wire 2 $ a [1:0] $end
+$var wire 2 % b [1:0] $end
+$var wire 1 & w1 $end
+$var wire 1 ' w2 $end
+$var wire 1 ( w3 $end
+$var wire 1 ) w4 $end
+$var wire 4 * out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx *
+x)
+x(
+x'
+x&
+bx %
+b11 $
+bx #
+b11 "
+bx !
+$end
+#2
+1(
+1&
+1'
+1)
+b1001 !
+b1001 *
+b11 #
+b11 %
+#4
+0(
+0&
+b110 !
+b110 *
+b10 "
+b10 $
+#6
+b0 !
+b0 *
+0'
+0)
+b0 #
+b0 %
