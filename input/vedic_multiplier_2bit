@@ -1,0 +1,87 @@
+#! /usr/local/bin/vvp
+:ivl_version "11.0 (stable)" "(v11_0-57-geaea6980)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+S_0x5589c47a44a0 .scope module, "tb_vedic_multiplier_2bit" "tb_vedic_multiplier_2bit" 2 1;
+ .timescale 0 0;
+v0x5589c47f5ac0_0 .var "a", 1 0;
+v0x5589c47f5b80_0 .var "b", 1 0;
+v0x5589c47f5c20_0 .net "out", 3 0, L_0x5589c47f69d0;  1 drivers
+S_0x5589c47dcc60 .scope module, "uut" "vedic_multiplier_2bit" 2 6, 3 1 0, S_0x5589c47a44a0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 2 "a";
+    .port_info 1 /INPUT 2 "b";
+    .port_info 2 /OUTPUT 4 "out";
+L_0x5589c47f5e80 .functor AND 1, L_0x5589c47f5cc0, L_0x5589c47f5d90, C4<1>, C4<1>;
+L_0x5589c47f6100 .functor AND 1, L_0x5589c47f5f90, L_0x5589c47f6030, C4<1>, C4<1>;
+L_0x5589c47f6240 .functor AND 1, L_0x5589c47f5e80, L_0x5589c47f6100, C4<1>, C4<1>;
+L_0x5589c47f64d0 .functor AND 1, L_0x5589c47f6350, L_0x5589c47f63f0, C4<1>, C4<1>;
+L_0x5589c47f6700 .functor AND 1, L_0x5589c47f6570, L_0x5589c47f6610, C4<1>, C4<1>;
+L_0x5589c47f6810 .functor XOR 1, L_0x5589c47f5e80, L_0x5589c47f6100, C4<0>, C4<0>;
+L_0x5589c47f68c0 .functor XOR 1, L_0x5589c47f6240, L_0x5589c47f64d0, C4<0>, C4<0>;
+L_0x5589c47f6bb0 .functor AND 1, L_0x5589c47f6240, L_0x5589c47f64d0, C4<1>, C4<1>;
+v0x5589c47cbcb0_0 .net *"_ivl_1", 0 0, L_0x5589c47f5cc0;  1 drivers
+v0x5589c47cb730_0 .net *"_ivl_15", 0 0, L_0x5589c47f6350;  1 drivers
+v0x5589c47ca800_0 .net *"_ivl_17", 0 0, L_0x5589c47f63f0;  1 drivers
+v0x5589c47f4c70_0 .net *"_ivl_23", 0 0, L_0x5589c47f6570;  1 drivers
+v0x5589c47f4d50_0 .net *"_ivl_25", 0 0, L_0x5589c47f6610;  1 drivers
+v0x5589c47f4e80_0 .net *"_ivl_26", 0 0, L_0x5589c47f6700;  1 drivers
+v0x5589c47f4f60_0 .net *"_ivl_3", 0 0, L_0x5589c47f5d90;  1 drivers
+v0x5589c47f5040_0 .net *"_ivl_30", 0 0, L_0x5589c47f6810;  1 drivers
+v0x5589c47f5120_0 .net *"_ivl_34", 0 0, L_0x5589c47f68c0;  1 drivers
+v0x5589c47f5200_0 .net *"_ivl_39", 0 0, L_0x5589c47f6bb0;  1 drivers
+v0x5589c47f52e0_0 .net *"_ivl_7", 0 0, L_0x5589c47f5f90;  1 drivers
+v0x5589c47f53c0_0 .net *"_ivl_9", 0 0, L_0x5589c47f6030;  1 drivers
+v0x5589c47f54a0_0 .net "a", 1 0, v0x5589c47f5ac0_0;  1 drivers
+v0x5589c47f5580_0 .net "b", 1 0, v0x5589c47f5b80_0;  1 drivers
+v0x5589c47f5660_0 .net "out", 3 0, L_0x5589c47f69d0;  alias, 1 drivers
+v0x5589c47f5740_0 .net "w1", 0 0, L_0x5589c47f5e80;  1 drivers
+v0x5589c47f5800_0 .net "w2", 0 0, L_0x5589c47f6100;  1 drivers
+v0x5589c47f58c0_0 .net "w3", 0 0, L_0x5589c47f6240;  1 drivers
+v0x5589c47f5980_0 .net "w4", 0 0, L_0x5589c47f64d0;  1 drivers
+L_0x5589c47f5cc0 .part v0x5589c47f5ac0_0, 0, 1;
+L_0x5589c47f5d90 .part v0x5589c47f5b80_0, 1, 1;
+L_0x5589c47f5f90 .part v0x5589c47f5ac0_0, 1, 1;
+L_0x5589c47f6030 .part v0x5589c47f5b80_0, 0, 1;
+L_0x5589c47f6350 .part v0x5589c47f5ac0_0, 1, 1;
+L_0x5589c47f63f0 .part v0x5589c47f5b80_0, 1, 1;
+L_0x5589c47f6570 .part v0x5589c47f5ac0_0, 0, 1;
+L_0x5589c47f6610 .part v0x5589c47f5b80_0, 0, 1;
+L_0x5589c47f69d0 .concat8 [ 1 1 1 1], L_0x5589c47f6700, L_0x5589c47f6810, L_0x5589c47f68c0, L_0x5589c47f6bb0;
+    .scope S_0x5589c47a44a0;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "simulation/tb_vedic_multiplier_2bit.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x5589c47a44a0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x5589c47a44a0;
+T_1 ;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0x5589c47f5ac0_0, 0, 2;
+    %delay 2, 0;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0x5589c47f5b80_0, 0, 2;
+    %delay 2, 0;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v0x5589c47f5ac0_0, 0, 2;
+    %delay 2, 0;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x5589c47f5b80_0, 0, 2;
+    %end;
+    .thread T_1;
+    .scope S_0x5589c47a44a0;
+T_2 ;
+    %vpi_call 2 27 "$monitor", $time, "a = %b  b = %b  product = %b", v0x5589c47f5ac0_0, v0x5589c47f5b80_0, v0x5589c47f5c20_0 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "test/tb_vedic_multiplier_2bit.v";
+    "hdl/vedic_multiplier_2bit.v";
