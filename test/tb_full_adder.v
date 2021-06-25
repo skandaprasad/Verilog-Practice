@@ -21,6 +21,6 @@ module tb_full_adder();
     end
 
     initial begin
-        $monitor($time, " units  S = %b, Cout = %b", S, Cout);
+        $monitor($time, " units A = %b B = %b Cin = %b  S = %b, Cout = %b", A, B, Cin, S, Cout);
     end
 endmodule
